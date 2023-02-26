@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
 .haader__banner {
   background: url("bg.png");
   background-size: cover;
-  height: 769px;
-  max-width: 100%;
   text-align: center;
   color: #ffffff;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .banner__logo--img {
   margin-top: 41px;
@@ -36,14 +37,12 @@
   margin-bottom: 71px;
 }
 .header__nav {
-  height: 65px;
   display: flex;
   background: #ffffff;
   border: 1px solid #e6e6e6;
-  padding-top: 25px;
   justify-content: space-between;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding:25px 250px;
+  width: 100%;
 }
 .nav__list {
   list-style-type: none;
@@ -71,10 +70,10 @@
   color: #00a4e5;
 }
 .about__wrapper {
+  
+  max-width: 1438px;
   text-align: center;
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-top: 122px;
+  margin: 57px 250px 115px 250px;
 }
 
 .section-title {
@@ -92,10 +91,14 @@
   margin-right: auto;
 }
 .cards {
+  width: 100%;
   display: flex;
   margin-top: 80px;
   justify-content: space-between;
   text-align: start;
+}
+.section__cards{
+  width: 50%;
 }
 .section-desc {
   margin-bottom: 30px;
@@ -117,6 +120,7 @@
 .achievements__items {
   display: flex;
   flex-direction: row;
+  width: 50%;
 }
 .achievements__text {
   font-family: "OpenSans";
@@ -125,8 +129,7 @@
   color: #ffffff;
 }
 .achievements__card1 {
-  width: 140px;
-  height: 224px;
+  width: 33.333%;
   margin-right: 20px;
   text-align: start;
   background: url("Bitmap.png");
@@ -135,8 +138,7 @@
   background-position: center center;
 }
 .achievements__card2 {
-  width: 140px;
-  height: 225px;
+  width: 33.333%;
   margin-right: 20px;
   background: url("Bitmap2.png");
   background-size: cover;
@@ -144,8 +146,7 @@
   background-position: center center;
 }
 .achievements__card3 {
-  width: 140px;
-  height: 225px;
+  width: 33.333%;
   background: url("Bitmap3.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,15 +191,17 @@
   border: none;
 }
 .features__wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 28px;
   margin-bottom: 115px;
 }
 .features__card {
+  width: 33.333%;
   text-align: start;
-  width: 295px;
-  height: 330px;
+  /* width: 295px;
+  height: 330px; */
   padding: 38px 22px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
@@ -230,8 +233,6 @@
 .GET-IN-TOUCH__title {
   padding-top: 120px;
   padding-bottom: 35px;
-  padding-left: 545px;
-  padding-right: 545px;
   font-size: 30px;
   line-height: 36px;
   color: #48555b;
@@ -256,6 +257,7 @@
   font-family: "OpenSans";
 }
 .Newsletter__text {
+  width: 50%;
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.846154px;
@@ -264,6 +266,7 @@
   margin-right: 70px;
 }
 .fieldset {
+  width: 50%;
   background: #ffffff;
   border: 1px solid #979797;
 }
@@ -361,3 +364,64 @@ color: #FFFFFF;
   padding-top: 22px;
   font-family: "OpenSans";
 }
+@media
+(max-width:1438px)
+{
+.about__wrapper {max-width:970px;margin:100px;}
+}
+@media
+(max-width:992px)
+{.about__wrapper {max-width:767px;margin:50px;}
+.footer__kopyright {padding-left: 50px;padding-right: 50px;}
+.header__nav {padding: 25px 150px 25px 50px;}
+}  
+@media
+(max-width:767px)
+{ .header__nav {padding: 25px 70px 25px 50px;}
+  .banner__text {margin-bottom: 10px;}
+  .about__wrapper {max-width:750px;margin:20px;}
+  .header__nav {flex-direction: column;padding: 8px 10px;}
+  .banner__logo--img {margin-top: 5px; margin-bottom: 40px;}
+  .banner__title {font-size: 15px; line-height: 20px;}
+  .banner__subtitle {font-size: 10px; line-height:5px;margin-bottom:100px;}
+  .cards {flex-direction: column;margin-top: 10px;text-align:center;}
+  .achievements__items {flex-direction: row; width: 100%;text-align:center;height: 100px}
+  .services__wrapper {flex-direction: column;margin-top: 40px;margin-bottom:100px;gap:10px;text-align:center;}
+  .features__wrapper {gap: 5px;margin-bottom: 5px; width: 100%;}
+  .features__card {width: 33.33%;padding:10px;}
+  .GET-IN-TOUCH {height:350px;}
+  .footer__kopyright {padding-left: 5px;padding-right: 5px;}
+  .footer__col--contact {margin-left: 5px;}
+  .fieldset {height: 40px;}
+  .features__title {font-size: 13px;line-height: 17px;margin-bottom: 10px}
+  .Newsletter {padding: 10px ;}
+}
+  @media
+  (max-width:477px)
+  {
+    .fieldset {height: 40px;}
+    .banner__text {margin-bottom: 10px;}
+    .about__wrapper {max-width:750px;margin:20px;}
+    .header__nav {flex-direction: column;padding: 8px 10px;}
+    .banner__logo--img {margin-top: 5px; margin-bottom: 40px;}
+    .banner__title {font-size: 15px; line-height: 20px;}
+    .banner__subtitle {font-size: 10px; line-height:5px;margin-bottom:100px;}
+    .cards {flex-direction: column;margin-top: 10px;text-align:center;}
+    .achievements__items {flex-direction: row; width: 100%;text-align:center;height: 100px}
+    .services__wrapper {flex-direction: column;margin-top: 40px;margin-bottom:100px;gap:10px;text-align:center;}
+    .features__wrapper {gap: 5px;margin-bottom: 5px;}
+    .features__card {width: 100%;padding:10px;}
+    .GET-IN-TOUCH {height:350px;}
+    .footer__kopyright {padding:20px;flex-direction: column;text-align: center;}
+    .footer__col--contact {margin-left: 0px;text-align: center;display: flex;
+     align-items: baseline;gap: 10px;}
+    .footer__list--link {display: flex;gap: 10px;}
+    .footer__list {display: flex;margin: 5px 15px; gap:10px;}
+    .info {margin-right: 0px;}
+    .footer__col__icon {margin: 5px;}
+    .footer__title {margin: 5px;}
+    .Newsletter {padding: 10px ;}
+    .features__title {font-size: 13px;line-height: 17px;margin-bottom: 10px}
+}
+  
+  
