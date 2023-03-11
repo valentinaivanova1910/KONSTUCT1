@@ -390,12 +390,12 @@ color: #FFFFFF;
     .header__nav {padding: 8px 10px;}
     .cards {flex-direction: column;margin-top: 10px;}
     .achievements__items {flex-direction: row; width: 100%;text-align:center;height: 100px}
-    .services__wrapper {flex-direction: column;margin-top: 40px;margin-bottom:100px;gap:10px;text-align:center;}
+    .services__wrapper {flex-direction: column;margin-top: 40px;margin-bottom:120px;gap:10px;text-align:center;}
     .features__wrapper {gap: 5px;margin-bottom: 5px;}
-    .features__card {width: 100%;padding:10px;}
+    .features__card {width: 100%;padding:10px;text-align: center;}
     .features__text {font-size: 11px;line-height: 15px;}
     .GET-IN-TOUCH {height:350px;}
-    .fieldset__input {padding-right: 20px;}
+    .fieldset__input {padding-right: 0px;}
     .footer__kopyright {padding:5px 15px;flex-direction: column;text-align: center;}
     .footer__list--link {display: flex;gap: 10px;}
     .footer__list {display: flex;margin: 0px; gap:10px;}
@@ -410,7 +410,7 @@ color: #FFFFFF;
   }
  @media
   (max-width:430px)
-   {.features__wrapper {gap: 5px;margin-bottom: 5px;flex-direction: column;}
+   {.features__wrapper {flex-direction: column;}
     .header__nav {flex-direction: column;gap: 10px;text-align: center;}
     .nav__list {justify-content: space-around;}
    }
