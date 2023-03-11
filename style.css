@@ -194,8 +194,6 @@ color: #FFFFFF;
 .features__card {
   width: 33.333%;
   text-align: start;
-  /* width: 295px;
-  height: 330px; */
   padding: 38px 22px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
@@ -379,7 +377,7 @@ color: #FFFFFF;
   .footer__col__icon {display: block;}
 }
   @media
-  (max-width:680px)
+  (max-width:730px)
   { .conteiner {height: 350px; padding-top: 10px;}
     .banner__logo--img {margin-bottom: 140px;}
     .banner__title{font-size: 20px;line-height: 20px;}
