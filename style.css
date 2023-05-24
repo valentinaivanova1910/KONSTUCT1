@@ -27,6 +27,7 @@
   top: 3%;
   transition: 0.3s;
   justify-content: center;
+  z-index: 100;
 }
 .burger__menu::after {
   content: "";
@@ -63,6 +64,7 @@
   top: 50%;
   transform: rotate(45deg) translate(0, 50%);
 }
+
 .banner__logo--img1 {
   width: 100%;
 }
@@ -618,4 +620,14 @@
     line-height: 6px;
     letter-spacing: 0.7px;
   }
+}
+.open{
+  display: block;
+}
+.active{
+  background: none  ;
+}
+
+.active::after, .active::before{
+    background-color: #48555b;
 }
